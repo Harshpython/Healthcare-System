@@ -1,9 +1,10 @@
+# importing all the necessary modules
 from flask import Flask, flash, request, redirect, url_for, render_template
 import urllib.request
 import os
 from werkzeug.utils import secure_filename
 import cv2
-import pickle
+import pickle #used to convert text to byte
 import imutils
 import sklearn
 from tensorflow.keras.models import load_model
@@ -16,10 +17,10 @@ import json
 import datetime
 
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "healthcure-9f50b-eaeed22fd8f2.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "healthcure-9f50b-eaeed22fd8f2.json" # enviromental 
 
 # Initialize Firestore DB
-cred = credentials.Certificate('key.json')
+cred = credentials.Certificate('key.json')# 
 default_app = initialize_app(cred, {
     'storageBucket': 'healthcure-9f50b.appspot.com'
 })
