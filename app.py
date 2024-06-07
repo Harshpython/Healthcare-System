@@ -13,7 +13,7 @@ import numpy as np
 from tensorflow.keras.applications.vgg16 import preprocess_input
 from firebase_admin import credentials, firestore, initialize_app, storage
 from google.cloud import storage as gcp_storage
-import json
+import json 
 import datetime
 
 
@@ -48,7 +48,7 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name):
     )
 
 
-covid_model = load_model('models/covid-19_model.h5')
+covid_model = load_model('models/covid-19_model.h5')#training rhe model
 braintumor_model = load_model('models/brain_tumor_model.h5')
 alzheimer_model = load_model('models/alzheimer_model.h5')
 diabetes_model = pickle.load(open('models/diabetes_model.sav', 'rb'))
@@ -78,7 +78,7 @@ def preprocess_imgs(set_name, img_size):
     return np.array(set_new)
 
 
-def crop_imgs(set_name, add_pixels_value=0):
+def crop_imgs(set_name, add_pixels_value=0):# to crop the images
     """
     Finds the extreme points on the image and crops the rectangular out of them
     """
