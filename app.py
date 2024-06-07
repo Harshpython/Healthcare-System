@@ -312,7 +312,7 @@ def resultd():
         return render_template('resultd.html', fn=firstname, ln=lastname, age=age, r=pred, gender=gender)
 
 
-@app.route('/resultbc', methods=['POST'])
+@app.route('/resultbc', methods=['POST'])#
 def resultbc():
     if request.method == 'POST':
         firstname = request.form['firstname']
@@ -369,6 +369,7 @@ def resulta():
         firestore_entry['age'] = age
         json_string = json.dumps(firestore_entry)
         json_object = json.loads(json_string)
+        #try and except statement
         
         try:
             users_ref.document(email).set(json_object)
