@@ -2,10 +2,10 @@ This project aims to develop a machine learning model to predict patient health 
 he Health Care ML Project uses supervised machine learning techniques to analyze patient data and predict health outcomes such as disease onset, recovery time, and response to treatment. This project demonstrates how machine learning can be integrated into healthcare systems to provide predictive analytics and support clinical decision-making.
 healthcare-ml-project/
  data
- raw/                   # Raw data files
- processed/             # Processed data files
+ raw                 # Raw data files
+ processed            # Processed data files
 
- notebooks/
+ notebooks
  data_exploration.ipynb # Jupyter notebook for data exploration
  model_training.ipynb   # Jupyter notebook for model training
 
