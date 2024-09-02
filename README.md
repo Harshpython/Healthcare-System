@@ -1,7 +1,7 @@
 This project aims to develop a machine learning model to predict patient health outcomes based on various health metrics and demographic data. The objective is to assist healthcare providers in early diagnosis and personalized treatment plans, thereby improving patient care and reducing healthcare costs.
 he Health Care ML Project uses supervised machine learning techniques to analyze patient data and predict health outcomes such as disease onset, recovery time, and response to treatment. This project demonstrates how machine learning can be integrated into healthcare systems to provide predictive analytics and support clinical decision-making.
 healthcare-ml-project/
- data 
+ data  
  raw                 # Raw data files 
  processed            # Processed data files
 
