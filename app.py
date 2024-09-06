@@ -1,7 +1,7 @@
 # importing all the necessary modules
 from flask import Flask, flash, request, redirect, url_for, render_template
 import urllib.request
-import os
+import os 
 from werkzeug.utils import secure_filename
 import cv2
 import pickle #used to convert text to byte  
