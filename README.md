@@ -5,7 +5,7 @@ healthcare-ml-project/
  raw                 # Raw data files  
  processed            # Processed data files
 
- notebooks
+ notebooks 
  data_exploration.ipynb # Jupyter notebook for data exploration
  model_training.ipynb   # Jupyter notebook for model training
 
